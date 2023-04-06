@@ -1,9 +1,9 @@
 # Site settings
 title: Steel Shadow
 SEOTitle: Steel Shadow's Blog
-header-img: img/home-bg.jpg
+header-img: img/camille.jpg
 email: a2154859402@gmail.com
-description: "这里是 Steel Shadow 的毛坯房 Blog"
+description: "这里是 Steel Shadow 的 Blog"
 keyword: "关键词"
 url: "https://steel-shadow.github.io/" # your host, for absolute URL
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
@@ -54,11 +54,9 @@ kramdown:
       line_numbers: true
       start_line: 1
 
-# Disqus settings
-disqus_username: Steel_Shadow
-
-# Netease settings
-netease_comment: false
+# Shortname of the web on Disqus.
+# This is used to uniquely identify your website on Disqus. It cannot be changed.
+disqus_username: steelshadow
 
 # Analytics settings
 # Baidu Analytics
@@ -69,7 +67,7 @@ netease_comment: false
 
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
-sidebar-about-description: "芝士side-bar"
+sidebar-about-description: "side-bar"
 sidebar-avatar: # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
@@ -86,5 +84,5 @@ page-mathjax: false
 # Friends
 friends:
   [
-    { title: "芝士朋友", href: "http://google.com" },
+    { title: "还没有朋友", href: "http://google.com" },
   ]
