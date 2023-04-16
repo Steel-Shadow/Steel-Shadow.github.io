@@ -37,11 +37,11 @@ task :post do
     post.puts "layout: post"
     post.puts "title:"
     post.puts "subtitle:"
-    post.puts "date: #{date}"
-    post.puts "author: \"Steel Shadow\""
-    post.puts "# header-img:"
-    post.puts "# header-style: text"
-    post.puts "mathjax: true"
+    post.puts "date:           #{date}"
+    post.puts "author:         Steel Shadow"
+    post.puts "# header-img:     img"
+    post.puts "# header-style:   text"
+    post.puts "mathjax:        true"
     post.puts "tags:"
     post.puts "    - 标签"
     post.puts "---"
@@ -50,7 +50,7 @@ end # task :post
 
 desc "Launch preview environment"
 task :preview do
-  system "jekyll --auto --server"
+  system "jekyll s"
 end # task :preview
 
 #Load custom rake scripts
