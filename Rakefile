@@ -37,10 +37,6 @@ task :post do
     post.puts "layout:         post"
     post.puts "title:          title"
     post.puts "subtitle:"
-<<<<<<< HEAD
-=======
-    post.puts "date:           2023-04-16"
->>>>>>> 19f4273 (OO Unit2)
     post.puts "date:           #{date}"
     post.puts "author:         Steel Shadow"
     post.puts "# header-img:     img"
@@ -48,6 +44,7 @@ task :post do
     post.puts "mathjax:        true"
     post.puts "tags:"
     post.puts "    - 标签"
+    post.puts "---"
   end
 end # task :post
 
