@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://steel-shadow.github.io/</loc>
+  <lastmod>2023-05-16T06:05:06+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://steel-shadow.github.io/about/</loc>
+  <lastmod>2023-05-16T06:05:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://steel-shadow.github.io/archive/</loc>
+  <lastmod>2023-05-16T06:05:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://steel-shadow.github.io/2023/05/12/OS_lab4/</loc>
+  <lastmod>2023-05-16T06:05:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://steel-shadow.github.io/2023/04/27/LaTeX-%E5%AD%A6%E4%B9%A0%E6%91%98%E8%A6%81/</loc>
+  <lastmod>2023-05-16T06:05:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://steel-shadow.github.io/2023/04/26/ssh%E9%85%8D%E7%BD%AE%E8%99%9A%E6%8B%9F%E6%9C%BA/</loc>
+  <lastmod>2023-05-16T06:05:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://steel-shadow.github.io/2023/04/18/OS_lab3/</loc>
+  <lastmod>2023-05-16T06:05:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://steel-shadow.github.io/2023/04/16/OO_Unit2/</loc>
+  <lastmod>2023-05-16T06:05:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://steel-shadow.github.io/2023/04/08/OO_Unit1/</loc>
+  <lastmod>2023-05-16T06:05:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://steel-shadow.github.io/2023/04/06/OS_lab2/</loc>
+  <lastmod>2023-05-16T06:05:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://steel-shadow.github.io/2023/04/06/OS_lab1/</loc>
+  <lastmod>2023-05-16T06:05:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://steel-shadow.github.io/archive/?tag=OS</loc>
+  <lastmod>2023-05-16T06:05:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://steel-shadow.github.io/archive/?tag=OO</loc>
+  <lastmod>2023-05-16T06:05:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://steel-shadow.github.io/archive/?tag=LaTeX</loc>
+  <lastmod>2023-05-16T06:05:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://steel-shadow.github.io/archive/?tag=%E8%99%9A%E6%8B%9F%E6%9C%BA</loc>
+  <lastmod>2023-05-16T06:05:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
