@@ -37,7 +37,7 @@ task :post do
     post.puts "layout:         post"
     post.puts "title:          title"
     post.puts "subtitle:"
-    post.puts "date:           #{date}"
+    post.puts "# date:           #{date}"
     post.puts "author:         Steel Shadow"
     post.puts "# header-img:     img"
     post.puts "# header-style:   text"
