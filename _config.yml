@@ -13,11 +13,11 @@ future: true
 
 # SNS settings
 RSS: false
-# weibo_username: 
+# weibo_username:
 zhihu_username: camille-liu-70
 github_username: Steel-Shadow
-# twitter_username: 
-#facebook_username:  
+# twitter_username:
+#facebook_username:
 #linkedin_username:  firstname-lastname-idxxxx
 
 # Build settings
@@ -63,11 +63,11 @@ disqus_username: steelshadow
 # ba_track_id: [your track id]
 
 # ga_track_id: "UA-49627206-1" # Format: UA-xxxxxx-xx
-# ga_domain: 
+# ga_domain:
 
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
-sidebar-about-description: "side-bar"
+sidebar-about-description: "coding..."
 sidebar-avatar: "/img/avatar.jpg" # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
@@ -84,5 +84,8 @@ page-mathjax: false
 # Friends
 friends:
   [
-    { title: "快来成为我的第一个朋友\n(*^▽^*)", href: "http://google.com" },
+    {
+      title: "快来成为我的第一个朋友\n(*^▽^*)",
+      href: "https://github.com/Steel-Shadow",
+    },
   ]
