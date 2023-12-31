@@ -6,6 +6,9 @@ header-img: "img/about.jpg"
 multilingual: true
 ---
 
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
 <!-- Chinese Version -->
 <div class="zh post-container">
     {% capture about_zh %}{% include about/zh.md %}{% endcapture %}
@@ -37,3 +40,20 @@ multilingual: true
 </script>
 <!-- disqus 公共JS代码 end -->
 {% endif %}
+
+<!-- Gitalk 评论 start  -->
+<div id="gitalk-container"></div>
+<script type="text/javascript">
+    var title = location.pathname.substr(0, 50);//截取路径的前50个字符作为标识符
+    const gitalk = new Gitalk({
+        // gitalk的主要参数
+        clientID: '{{site.gitalk_id}}',
+        clientSecret: '{{site.gitalk_secret}}',
+        repo: 'Steel-Shadow.github.io',
+        owner: 'Steel-Shadow',
+        admin: ['Steel-Shadow'],
+        id: title,//因为这里不能超过50字符，所以做了处理，当超过50时自动截取前50
+    });
+    gitalk.render('gitalk-container');
+</script>
+<!-- Gitalk end -->

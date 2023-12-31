@@ -3,8 +3,8 @@ title: Steel Shadow
 SEOTitle: Steel Shadow's Blog
 header-img: img/camille.jpg
 email: a2154859402@gmail.com
-description: "这里是 Steel Shadow 的 Blog"
-keyword: "关键词"
+description: "Steel Shadow 的 Blog"
+keyword: "Steel Shadow blog"
 url: "https://steel-shadow.github.io/" # your host, for absolute URL
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
@@ -56,7 +56,12 @@ kramdown:
 
 # Shortname of the web on Disqus.
 # This is used to uniquely identify your website on Disqus. It cannot be changed.
-disqus_username: steelshadow
+# disqus_username: steelshadow 
+
+# 修改评论区： disqus -> gitalk 
+# secrets 是 github 仓库的密钥
+gitalk_id: ${{ secrets.gitalk_id }}
+gitalk_secret: ${{ secrets.gitalk_secret }}
 
 # Analytics settings
 # Baidu Analytics
