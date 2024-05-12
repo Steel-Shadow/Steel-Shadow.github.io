@@ -2,7 +2,6 @@
 
 ### [我的博客在这里 &rarr;](http://huxpro.github.io)
 
-
 ### 关于收到"Page Build Warning"的email
 
 由于jekyll升级到3.0.x,对原来的pygments代码高亮不再支持，现只支持一种-rouge，所以你需要在 `_config.yml`文件中修改`highlighter: rouge`.另外还需要在`_config.yml`文件中加上`gems: [jekyll-paginate]`.
@@ -18,13 +17,12 @@
 
 参考文档：[using jekyll with pages](https://help.github.com/articles/using-jekyll-with-pages/) & [Upgrading from 2.x to 3.x](http://jekyllrb.com/docs/upgrading/2-to-3/)
 
-
 ## 关于模板(beta)
 
 我的博客仓库——`huxpro.github.io`，是经常修改的，而且还会有人乱提交代码，因此给大家做了一个稳定版的模板。大家可以直接fork模板——`huxblog-boilerplate`,要改的地方我都说明了。或者可以直接下载zip到本地自己去修改。
 
 ```
-$ git clone git@github.com:Huxpro/huxblog-boilerplate.git
+git clone git@github.com:Huxpro/huxblog-boilerplate.git
 ```
 
 **[在这里预览模板 &rarr;](http://huangxuan.me/huxblog-boilerplate/)**
@@ -37,9 +35,7 @@ $ git clone git@github.com:Huxpro/huxblog-boilerplate.git
 * `-apple-system`被添加到了字体规则里面了，这套字体格式能将iOS9默认的新字体**San Francisco**表现的非常漂亮。
 * 解决了代码过长自动换行的bug,替换为横向滚动条。详情请见[issue#15](https://github.com/Huxpro/huxpro.github.io/issues/15)
 
-###### 其他历史版本个人觉得没有必要了解，看看英文就行了。
-
-
+###### 其他历史版本个人觉得没有必要了解，看看英文就行了
 
 ## 支持
 
@@ -49,29 +45,28 @@ $ git clone git@github.com:Huxpro/huxblog-boilerplate.git
 ## 说明文档
 
 * 开始
-	* [环境要求](#environment)
-	* [开始](#get-started)
-	* [写一篇博文](#write-posts)
+ 	* [环境要求](#environment)
+ 	* [开始](#get-started)
+ 	* [写一篇博文](#write-posts)
 * 组件
-	* [侧边栏](#sidebar)
-	* [迷你关于我](#mini-about-me)
-	* [推荐标签](#featured-tags)
-	* [好友链接](#friends)
-	* [HTML5 演示文档布局](#keynote-layout)
+ 	* [侧边栏](#sidebar)
+ 	* [迷你关于我](#mini-about-me)
+ 	* [推荐标签](#featured-tags)
+ 	* [好友链接](#friends)
+ 	* [HTML5 演示文档布局](#keynote-layout)
 * 评论与 Google/Baidu Analytics
-	* [评论](#comment)
-	* [网站分析](#analytics) 
+ 	* [评论](#comment)
+ 	* [网站分析](#analytics)
 * 高级部分
-	* [自定义](#customization)
-	* [标题底图](#header-image)
-	* [搜索展示标题-头文件](#seo-title)
+ 	* [自定义](#customization)
+ 	* [标题底图](#header-image)
+ 	* [搜索展示标题-头文件](#seo-title)
 
 #### Environment
 
 如果你安装了jekyll，那你只需要在命令行输入`jekyll serve`就能在本地浏览器预览主题。你还可以输入`jekyll serve --watch`，这样可以边修改边自动运行修改后的文件。
 
-经 [@BrucZhaoR](https://github.com/BruceZhaoR)的测试，好像两个命令都是可以的自动运行修改后的文件的，刷新后可以实时预览。官方文件是建议安装bundler，这样你在本地的效果就跟在github上面是一样的。详情请见这里：https://help.github.com/articles/using-jekyll-with-pages/#installing-jekyll
-
+经 [@BrucZhaoR](https://github.com/BruceZhaoR)的测试，好像两个命令都是可以的自动运行修改后的文件的，刷新后可以实时预览。官方文件是建议安装bundler，这样你在本地的效果就跟在github上面是一样的。详情请见这里：<https://help.github.com/articles/using-jekyll-with-pages/#installing-jekyll>
 
 #### Get Started
 
@@ -80,7 +75,7 @@ $ git clone git@github.com:Huxpro/huxblog-boilerplate.git
 ```
 # Site settings
 title: Hux Blog             # 你的博客网站标题
-SEOTitle: Hux Blog			# 在后面会详细谈到
+SEOTitle: Hux Blog   # 在后面会详细谈到
 description: "Cool Blog"    # 随便说点，描述一下
 
 # SNS settings      
@@ -127,6 +122,7 @@ rake post title="Hello 2015" subtitle="Hello World, Hello Blog"
 ![](http://huangxuan.me/img/blog-sidebar.jpg)
 
 设置是在 `_config.yml`文件里面的`Sidebar settings`那块。
+
 ```
 # Sidebar settings
 sidebar: true  #添加侧边栏
@@ -135,7 +131,6 @@ sidebar-avatar: /img/avatar-hux.jpg     #你的大头贴，请使用绝对地址
 ```
 
 侧边栏是响应式布局的，当屏幕尺寸小于992px的时候，侧边栏就会移动到底部。具体请见bootstrap栅格系统 <http://v3.bootcss.com/css/>
-
 
 #### Mini About Me
 
@@ -153,9 +148,8 @@ featured-condition-size: 1     # A tag will be featured if the size of it is mor
 ```
 
 唯一需要注意的是`featured-condition-size`: 如果一个标签的 SIZE，也就是使用该标签的文章数大于上面设定的条件值，这个标签就会在首页上被推荐。
- 
-内部有一个条件模板 `{% if tag[1].size > {{site.featured-condition-size}} %}` 是用来做筛选过滤的.
 
+内部有一个条件模板 `{% if tag[1].size > {{site.featured-condition-size}} %}` 是用来做筛选过滤的.
 
 #### Friends
 
@@ -177,7 +171,6 @@ friends: [
 ]
 ```
 
-
 #### Keynote Layout
 
 HTML5幻灯片的排版：
@@ -197,27 +190,9 @@ iframe:     "http://huangxuan.me/js-module-7day/"
 
 iframe在不同的设备中，将会自动的调整大小。保留内边距是为了让手机用户可以向下滑动，以及添加更多的内容。
 
-
 #### Comment
 
-博客不仅支持多说[Duoshuo](http://duoshuo.com)评论系统，也支持[Disqus](http://disqus.com)评论系统。
-
-`Disqus`优点是：国际比较流行，界面也很大气、简介，如果有人评论，还能实时通知，直接回复通知的邮件就行了；缺点是：评论必须要去注册一个disqus账号，分享一般只有Facebook和Twitter，另外在墙内加载速度略慢了一点。想要知道长啥样，可以看以前的版本点[这里](http://brucezhaor.github.io/about.html) 最下面就可以看到。
-
-`多说` 优点是：支持国内各主流社交软件(微博，微信，豆瓣，QQ空间 ...)一键分享按钮功能，另外登陆比较方便，管理界面也是纯中文的，相对于disqus全英文的要容易操作一些；缺点是：就是界面丑了一点。
-当然你是可以自定义界面的css的，详情请看多说开发者文档 http://dev.duoshuo.com/docs/5003ecd94cab3e7250000008 。
-
-**首先**，你需要去注册一个账号，不管是disqus还是多说的。**不要直接使用我的啊！**
-
-**其次**，你只需要在下面的yaml头文件中设置一下就可以了。
-
-```
-duoshuo_username: _你的用户名_
-# 或者
-disqus_username: _你的用户名_
-```
-
-**最后**多说是支持分享的，如果你不想分享，请这样设置：`duoshuo_share: false`。你可以同时使用两个评论系统，不过个人感觉怪怪的。
+<https://utteranc.es/>
 
 #### Analytics
 
@@ -229,7 +204,7 @@ ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 
 # Google Analytics
 ga_track_id: 'UA-49627206-1'            # 你用Google账号去注册一个就会给你一个这样的id
-ga_domain: huangxuan.me			# 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto。
+ga_domain: huangxuan.me   # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto。
 ```
 
 #### Customization
@@ -243,7 +218,7 @@ JavaScript 的压缩混淆、Less 的编译、Apache 2.0 许可通告的添加�
 #### Header Image
 
 标题底图是可以自己选的，看看几篇示例post你就知道如何设置了。在
-  [issue #6 ](https://github.com/Huxpro/huxpro.github.io/issues/6) 中我被问到：怎么样才能让标题底图好看呢？
+  [issue #6](https://github.com/Huxpro/huxpro.github.io/issues/6) 中我被问到：怎么样才能让标题底图好看呢？
   
 标题底图的选取完全是看个人的审美了，我也帮不了你。每一篇文章可以有不同的底图，你想放什么就放什么，最后宽度要够，大小不要太大，否则加载慢啊。
 
@@ -258,9 +233,6 @@ JavaScript 的压缩混淆、Less 的编译、Apache 2.0 许可通告的添加�
 ## 致谢
 
 1. 这个模板是从这里[IronSummitMedia/startbootstrap-clean-blog-jekyll](https://github.com/IronSummitMedia/startbootstrap-clean-blog-jekyll)  fork 的。 感谢这个作者
-2. 感谢[@BrucZhaoR](https://github.com/BruceZhaoR)的中文翻译 
+2. 感谢[@BrucZhaoR](https://github.com/BruceZhaoR)的中文翻译
 
 3. 感谢 Jekyll、Github Pages 和 Bootstrap!
-
-
-

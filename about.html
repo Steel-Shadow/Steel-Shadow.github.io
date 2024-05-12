@@ -12,45 +12,4 @@ multilingual: true
     {{ about_zh | markdownify }}
 </div>
 
-
-{% if site.disqus_username %}
-<!-- disqus 评论框 start -->
-<div class="comment">
-    <div id="disqus_thread" class="disqus-thread">
-
-    </div>
-</div>
-<!-- disqus 评论框 end -->
-
-<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES * * */
-    var disqus_shortname = "{{site.disqus_username}}";
-    var disqus_identifier = "{{site.disqus_username}}/{{page.url}}";
-    var disqus_url = "{{site.url}}{{page.url}}";
-
-    (function () {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<!-- disqus 公共JS代码 end -->
-{% endif %}
-
-<!-- Gitalk 评论 start  -->
-<div id="gitalk-container"></div>
-<script type="text/javascript">
-    var title = location.pathname.substr(0, 50);//截取路径的前50个字符作为标识符
-    const gitalk = new Gitalk({
-        // gitalk的主要参数
-        clientID: '{{site.gitalk_id}}',
-        clientSecret: '{{site.gitalk_secret}}',
-        repo: 'Steel-Shadow.github.io',
-        owner: 'Steel-Shadow',
-        admin: ['Steel-Shadow'],
-        id: title,//因为这里不能超过50字符，所以做了处理，当超过50时自动截取前50
-    });
-    gitalk.render('gitalk-container');
-</script>
-<!-- Gitalk end -->
+{% include comment.html %}
