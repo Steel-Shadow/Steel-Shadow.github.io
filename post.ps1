@@ -49,7 +49,7 @@ $subtitle = $args.Count -ge 2 ? $args[1] : ""
 
 $tags = New-Object System.Collections.ArrayList
 if ($args.Count -lt 3) {
-    $tags.Add("tag")
+    $tags.Add("tag") | Out-Null
 }
 else {
     $iter = 2
