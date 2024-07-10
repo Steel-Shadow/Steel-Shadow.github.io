@@ -11,7 +11,17 @@ tags:
     - proxy
 ---
 
-# 参考资料
+## 更新 2024.7.10
+
+2023.11.3 Clash 删库跑路，换用开源新内核 [Mihomo](https://github.com/MetaCubeX/mihomo)（原 Clash Meta）。支持 Clash 全部特性，支持 Clash Premium 核心部分特性。配置文件一般可以直接迁移使用。
+
++ [Mihomo (Clash Meta) wiki](https://wiki.metacubex.one)
++ [Android gui](https://github.com/MetaCubeX/ClashMetaForAndroid)
++ [Windows, MacOS, Linux gui](https://github.com/clash-verge-rev/clash-verge-rev)
+
+以下为原文，部分内容过时。
+
+## 参考资料
 
 + [clash wiki](https://clash.wiki/)
 + [external-controller api](https://clash.gitbook.io/doc)
