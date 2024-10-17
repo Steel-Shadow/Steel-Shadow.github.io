@@ -7,3 +7,5 @@ gem "jekyll"
 gem "rake"
 
 gem "webrick"
+
+gem "kramdown-parser-gfm"
