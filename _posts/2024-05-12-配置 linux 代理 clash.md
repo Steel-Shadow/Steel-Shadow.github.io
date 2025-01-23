@@ -8,7 +8,7 @@ author:         Steel Shadow
 # header-style:   text
 mathjax:        true
 tags:
-    - proxy
+    - network
 ---
 
 ## 更新 2024.7.10
