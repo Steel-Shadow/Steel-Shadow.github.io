@@ -21,6 +21,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        
+      # Github Action 的官方 runner 默认不支持 IPv6，需要套用一层 cloudflare 的 WARP 才能支持 IPv6
+      - name: Set up WARP
+        uses: fscarmen/warp-on-actions@v1.1
+        with:
+          stack: dual
+        
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1 # v1.161.0
         with:
@@ -43,15 +50,15 @@ jobs:
         uses: actions/upload-pages-artifact@v3
     
       - name: SCP to Server
-        uses: appleboy/scp-action@v0.1.7
+        uses: appleboy/scp-action@master
         with:
-          host: ${{ secrets.HOST }}
+          host: ${{ secrets.HOST }},${{ secrets.HOST2 }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
           source: _site
           target: /srv/www/blog
           rm: true
-    
+
   # Deployment job
   deploy:
     # Add a dependency to the build job
