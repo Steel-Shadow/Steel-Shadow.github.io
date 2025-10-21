@@ -8,7 +8,7 @@ author:         Steel Shadow
 # header-style:   text
 mathjax:        true
 tags:
-    - tag
+    - c++
 ---
 
 - [获取 clangd](#获取-clangd)
